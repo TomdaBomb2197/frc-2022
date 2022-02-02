@@ -13,8 +13,6 @@ import edu.wpi.first.networktables.NetworkTableInstance;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.networktables.NetworkTable;
 
-
-
 public class Limelight extends SubsystemBase {
   /**
    * Creates a new Limelight.

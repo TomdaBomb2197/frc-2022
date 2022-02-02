@@ -6,6 +6,7 @@ package frc.robot.subsystems;
 import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.kauailabs.navx.frc.AHRS;
+//import edu.wpi.first.util.sendable.Sendable;
 
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
@@ -97,7 +98,7 @@ public class Drivetrain extends SubsystemBase {
   public double getRobotAngle(){
     // fix the cmd name 
     // note: the double returned may be degrees (may be more than 360 tho)
-    return m_ahrs.getAngle();
+    return 1.0;//m_ahrs.getYaw();
   }
 
   @Override

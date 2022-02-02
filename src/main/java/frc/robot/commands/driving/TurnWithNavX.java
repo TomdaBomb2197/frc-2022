@@ -10,13 +10,20 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 public class TurnWithNavX extends CommandBase {
   public static final class Config {
     //nothing here :(
-    public Drivetrain m_dDrivetrain;
   }
-  public TurnWithNavX(Drivetrain drive);
+
+  private Drivetrain m_drivetrain;
+
+  public TurnWithNavX(Drivetrain drive) {
+
+    m_drivetrain = drive;
+
+  }
+
   /** Creates a new TurnWithNavX. */
   public TurnWithNavX() {
     // Use addRequirements() here to declare subsystem dependencies.
-    addRequirements(m_drive);
+    addRequirements(m_drivetrain);
   }
 
 
